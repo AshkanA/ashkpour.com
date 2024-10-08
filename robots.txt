@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /index.html
-Disallow: /css/
-Disallow: /js/
 Disallow: /assets/
