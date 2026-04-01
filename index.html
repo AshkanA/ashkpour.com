@@ -6,7 +6,19 @@
         <meta name="description" content="Personal website of Dr. Ashkan Ashkpour. Read more about my work, projects, and datasets." />
         <meta name="author" content="Ashkan Ashkpour" />
         <title>Ashkan Ashkpour, PhD</title>
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://ashkpour.com/" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+        <!-- Open Graph / Social sharing -->
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Ashkan Ashkpour, PhD" />
+        <meta property="og:description" content="Senior Data Architect and researcher in data harmonization, Linked Data and Semantic Web technologies. Creator of the Gemeentelijk Gegevensmodel." />
+        <meta property="og:url" content="https://ashkpour.com/" />
+        <meta property="og:image" content="https://ashkpour.com/assets/img/ashkan-ashkpour.jpg" />
+        <meta property="og:image:alt" content="Ashkan Ashkpour, PhD – Senior Data Architect" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="profile:first_name" content="Ashkan" />
+        <meta property="profile:last_name" content="Ashkpour" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -23,6 +35,7 @@
             gtag('config', 'G-FNQ007DNQ7');
         </script>
 
+        <!-- Schema.org structured data -->
         <script type="application/ld+json">
             {
             "@context": "https://schema.org",
@@ -38,6 +51,10 @@
                 "@type": "CollegeOrUniversity",
                 "name": "Erasmus University Rotterdam"
             },
+            "affiliation": {
+                "@type": "Organization",
+                "name": "City of Delft"
+            },
             "sameAs": [
                 "https://www.linkedin.com/in/ashkanashkpour/",
                 "https://scholar.google.nl/citations?user=6lEzjD4AAAAJ&hl",
@@ -48,7 +65,12 @@
             ],
             "url": "https://ashkpour.com",
             "description": "Ashkan Ashkpour, PhD, is a Senior Data Architect and researcher with extensive experience in data harmonization, data modeling, Linked Data technologies, and historical data analysis. He holds a PhD in integrating and harmonizing statistical data in the Semantic Web. He currently works on the Gemeentelijk Gegevensmodel (GGM), an award-winning national data model for (re)use by all Dutch municipalities.",
-            "image": "https://ashkpour.com/assets/img/Ashkan%20Ashkpour.jpg",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://ashkpour.com/assets/img/ashkan-ashkpour.jpg",
+                "contentUrl": "https://ashkpour.com/assets/img/ashkan-ashkpour.jpg",
+                "description": "Portrait of Ashkan Ashkpour, PhD – Senior Data Architect"
+            },
             "knowsAbout": [
                 "Data Harmonization",
                 "Data Modeling",
@@ -56,12 +78,7 @@
                 "Linked Data",
                 "Semantic Web",
                 "Historical Data"
-            ],
-            "affiliation": {
-                "@type": "Organization",
-                "name": "International Institute of Social History",
-                "url": "https://iisg.amsterdam"
-            }
+            ]
             }
             </script>
     
@@ -71,7 +88,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Ashkan Ashkpour</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Ashkan Ashkpour.jpg" alt="Ashkan Ashkpour" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/ashkan-ashkpour.jpg" alt="Ashkan Ashkpour" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
