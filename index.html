@@ -561,6 +561,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#media">Featured In</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#book">Book</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -929,6 +930,37 @@
                             <p><a href="https://www.google.nl/books/edition/Theory_and_Practice_of_Historical_Census/1PU5EQAAQBAJ">Download</a> and read a digital version for free on Google Books or Purchase a signed printed copy of the book directly.</p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Contact-->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Contact</h2>
+                    <p class="lead mb-5">Feel free to reach out. Whether it's about research, data architecture, collaboration, or anything else.</p>
+                    <form id="contactForm" action="https://formspree.io/f/xgorqkqr" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="contactName">Name</label>
+                                <input type="text" class="form-control" id="contactName" name="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="email" placeholder="your@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" name="_subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea class="form-control" id="contactMessage" name="message" rows="6" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary btn-lg">Send Message</button>
+                        <div id="contactSuccess" class="alert alert-success mt-4" style="display:none;">Thanks for your message — I'll get back to you soon.</div>
+                        <div id="contactError" class="alert alert-danger mt-4" style="display:none;">Something went wrong. Please try again.</div>
+                    </form>
                 </div>
             </section>
         </div>

@@ -40,3 +40,36 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+// Contact form — submits to Formspree via fetch, shows inline result
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form    = e.target;
+    var btn     = form.querySelector('button[type="submit"]');
+    var success = document.getElementById('contactSuccess');
+    var error   = document.getElementById('contactError');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(function (res) {
+        if (res.ok) {
+            form.reset();
+            success.style.display = 'block';
+            error.style.display   = 'none';
+            btn.style.display     = 'none';
+        } else {
+            error.style.display   = 'block';
+            success.style.display = 'none';
+            btn.disabled = false;
+            btn.textContent = 'Send Message';
+        }
+    }).catch(function () {
+        error.style.display   = 'block';
+        success.style.display = 'none';
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+    });
+});
